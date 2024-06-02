@@ -6,6 +6,6 @@ router.post('/', linkController.createLink);
 router.get('/', linkController.getLink);
 router.put('/:id', linkController.updateLink);
 router.delete('/:id', linkController.deleteLink);
-router.get('/redirect/:id',linkController.redirectLink)
+
 
 module.exports = router;

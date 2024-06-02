@@ -1,11 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const linkController = require('../controllers/linkController');
+const redirectController = require('../controllers/redirectController');
 
-// router.post('/', linkController.createLink);
-// router.get('/', linkController.getLink);
-// router.put('/:id', linkController.updateLink);
-// router.delete('/:id', linkController.deleteLink);
-router.get('/:id',linkController.redirectLink)
+router.get('/seg/:id', redirectController.dataSegmentation);
+
+router.get('/:id', redirectController.redirectLink)
 
 module.exports = router;
