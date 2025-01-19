@@ -15,4 +15,6 @@ const PORT = process.env.PORT || 3000;
 app.use('/api/users', userRoutes);
 app.use('/api/links', linkRoutes);
 app.use('/mytinyurl',redirectRoutes)
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+module.exports = app;
+
